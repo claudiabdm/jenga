@@ -72,7 +72,6 @@ const directionalLight = new DirectionalLight("white", 0.3);
 directionalLight.castShadow = true;
 directionalLight.position.x = -5;
 directionalLight.position.z = -5;
-directionalLight.shadowCameraVisible = true;
 directionalLight.shadow.mapSize.width = 1024;
 directionalLight.shadow.mapSize.height = 1024;
 directionalLight.shadow.camera.near = 0;
@@ -173,7 +172,7 @@ function createFloor() {
   const floor = new Mesh(
     planeGeometry,
     new MeshStandardMaterial({
-      color: "#eeeee",
+      color: "#eeeeee",
       metalness: 0.3,
       roughness: 0.4,
       side: DoubleSide,
