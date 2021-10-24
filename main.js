@@ -16,15 +16,21 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 import "./style.css";
 
+import woodColorMap from "/textures/2K-anigre_basecolor.png";
+import woodNormalMap from "/textures/2K-anigre_normal.png";
+import woodRoughMap from "/textures/2K-anigre_roughness.png";
+import woodMetalMap from "/textures/2K-anigre_metallic.png";
+import woodAoMap from "/textures/2K-anigre_ao.png";
+
 /**
  * Loaders
  */
 const textureLoader = new TextureLoader();
-const woodColor = textureLoader.load("/textures/2K-anigre_basecolor.png");
-const woodNormal = textureLoader.load("/textures/2K-anigre_normal.png");
-const woodRough = textureLoader.load("/textures/2K-anigre_roughness.png");
-const woodMetal = textureLoader.load("/textures/2K-anigre_metallic.png");
-const woodAo = textureLoader.load("/textures/2K-anigre_ao.png");
+const woodColor = textureLoader.load(woodColorMap);
+const woodNormal = textureLoader.load(woodNormalMap);
+const woodRough = textureLoader.load(woodRoughMap);
+const woodMetal = textureLoader.load(woodMetalMap);
+const woodAo = textureLoader.load(woodAoMap);
 
 /**
  * Base
